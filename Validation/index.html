@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Validation</title>
+</head>
+<body>
+    <form name="myForm" onsubmit="return validateForm()" method="post"></form>
+    <div class="form">
+        Card: <input type="text" name="user" class ="user" id="user" onkeyup="return valid()" maxlength="9" value="" placeholder="Ex. ABA300000" required>
+
+        <p id="upper">UpperCase</p>
+        <p id="num">Contains Number</p>
+        <p id="numlet">Contains 3 letter 6 digits.</p>
+        <p id="con9">Contains 9 Characters.</p>
+    </div>
+
+        <div class="button">
+        <input type="submit" value="Submit" >
+    </div>
+</form>
+    
+<script src="index.js"></script>
+</body>
+</html>
